@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Gohu GohuFont:pixelsize=14:antialias=false:autohint=false";
+static char *font = "Inconsolata Regular:family=mono:size=11:antialias=false:autohint=false";
 static int borderpx = 2;
 
 /*
