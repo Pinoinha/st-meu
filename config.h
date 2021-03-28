@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Source Code Pro:style=Bold:pixelsize=22:antialias=true:autohint=true";
+static char *font = "Source Code Pro:style=Bold:pixelsize=24:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -136,7 +136,7 @@ unsigned int defaultbg = 233;
 /* Corrigindo a cor do cursor para temas Xresources */
 static unsigned int defaultcs = 7;
 static unsigned int defaultrcs = 257;
-unsigned int const currentBg = 6, buffSize = 2048;
+unsigned int const currentBg = 233, buffSize = 2048;
 /// [Vim Browse] Colors for search results currently on screen.
 unsigned int const highlightBg = 160, highlightFg = 15;
 char const wDelS[] = "!\"#$%&'()*+,-./:;<=>?@[\\]^`{|}~", wDelL[] = " \t";
@@ -260,7 +260,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ MODKEY,               XK_c,           normalMode,     {.i =  0} },
+	{ TERMMOD,              XK_space,       normalMode,     {.i =  0} },
 	{ TERMMOD,              XK_Return,      newterm,        {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
