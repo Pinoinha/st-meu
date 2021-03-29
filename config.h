@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Source Code Pro:style=Bold:pixelsize=24:antialias=true:autohint=true";
+static char *font = "Inconsolata Nerd Font:style=Bold:pixelsize=32:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -100,12 +100,12 @@ float alpha = 1.0;
 static const char *colorname[] = {
 	/* 8 normal colors */
 	"#101112",
-	"red3",
-	"green3",
+	"#ff0000",
+	"#6EF38B",
 	"yellow3",
 	"#799df6",
-	"magenta3",
-	"cyan3",
+	"#ff00ff",
+	"#00ffff",
 	"gray90",
 
 	/* 8 bright colors */
