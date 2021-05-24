@@ -5,8 +5,13 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Inconsolata Nerd Font:style=Bold:pixelsize=32:antialias=true:autohint=true";
-static int borderpx = 2;
+static char *font = "Inconsolata:style=Bold:pixelsize=28:antialias=true:autohint=true"; 
+/* Spare fonts */
+static char *font2[] = {
+	"Symbols Nerd Font:style=1000-em" 
+};
+
+static int borderpx = 4;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -233,6 +238,10 @@ static MouseShortcut mshortcuts[] = {
 #define MODKEY Mod1Mask
 #define TERMMOD (ControlMask|ShiftMask)
 
+/* TODO: implement shell command shortcuts */
+/* Run shell commands */
+#define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+
 /* For use with external pipe */
 char 
 *openurlcmd[] = { "/bin/sh", "-c",
@@ -258,7 +267,7 @@ static Shortcut shortcuts[] = {
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
 
 	/* external pipe */
-	{ TERMMOD,              XK_U,           externalpipe,   {.v =  openurlcmd} },
+	{ TERMMOD,              XK_X,           externalpipe,   {.v = openurlcmd} },
 };
 
 /*
