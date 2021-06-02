@@ -5,7 +5,12 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Hack:style=Bold:pixelsize=28:antialias=true:autohint=true"; 
+static char *font = "Inconsolata:style=Bold:pixelsize=28:antialias=true:autohint=true"; 
+/* Spare fonts */
+static char *font2[] = {
+	"Symbols Nerd Font:style=1000-em" 
+};
+
 static int borderpx = 4;
 
 /*
@@ -101,7 +106,7 @@ static const char *colorname[] = {
 	/* 8 normal colors */
 	"#101112",
 	"#ff0000",
-	"#6EF38B",
+	"#6ef38b",
 	"#fbdd91",
 	"#799df6",
 	"#ff00ff",
